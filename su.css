@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+}
+header{
+	width: 90%;
+	height: 10vh;
+	display: flex;
+	margin: auto;
+	align-items:center;
+
+}
+.logo-container,
+.nav-links,
+.cart {
+	display: flex;
+}
+.logo{
+	font-size: 20px;
+
+
+}
+.logo-container{
+	display: flex;
+	align-items:center;
+	flex:1;
+	margin-left: 5vh;
+}
+.logo {
+margin-left: 10px;
+}
+nav{
+	flex:2;
+	color: #a1a09d;
+}
+.cart{
+	flex:1;
+	justify-content:flex-end;
+}
+nav ul{
+	display: flex;
+	justify-content:space-around;
+	align-items:center;
+}
+nav ul li{
+	list-style-type: none;
+	font-size: 20px;
+}
+nav ul li a{
+	text-decoration: none;
+
+}
+.presentation{
+	display: flex;
+	width: 90%;
+	margin: auto;
+	align-items: center;
+
+}
+.intro-text,.cover{
+	margin-top: 8vh;
+}
+.intro-text h1{
+	font-size: 3.2rem;
+	font-weight: 400px;
+	background: linear-gradient(to right,#a1a09d,#888a89);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color: transparent;
+
+}
+.intro-text p{
+	margin: 5vh 0;
+	font-size: 1.6rem;
+	color: #585772;
+}
+.intro{
+	flex:1;
+}
+.cover{
+	flex:1;
+}
+.cover img{
+	margin-left: 80px;
+	height: 60vh;
+	justify-content:flex-end;
+	filter: drop-shadow(0px 5px 3px black);
+	animation: drop 1.5s ease;
+}
+button{
+	margin-top: 5vh;
+	font-size: 16px;
+	width: 180px;
+	height: 50px;
+
+}
+.btn-section{
+	margin-right: 30px;
+	border: 2px solid #db92e0;
+	background: white;
+	color: #db92e0;
+}
+.btn-add{
+	
+	border: none;
+	background: #db92e0;
+	color: white;
+}
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.laptop-select{
+	width: 15%;
+	margin-top: 30px;
+	display: flex;
+	justify-content:space-around;
+	position: absolute;
+	right: 22%;
+
+}
+.big-circle{
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	height: 80vh;
+	opacity: 0.3;
+}
+.mid-circle{
+	position: absolute;
+	top: 30%;
+	right:30%;
+	z-index: 1;
+	height: 60%;
+	opacity: 0.5;
+}
+.small-circle {
+	position: absolute;
+	bottom: 0%;
+	left: 20%;
+	z-index: -1;
+}
